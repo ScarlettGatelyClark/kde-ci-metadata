@@ -1,0 +1,97 @@
+#PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
+project: &defaults
+ pretty_name: ""
+ path: "frameworks"
+ group_name: Frameworks
+ active: true 
+ branchGrouptracks:
+  kf5-qt5: devel
+  stable-kf5-qt5: devel
+  kf5-minimum: devel
+  kf5-qt5-patch: devel
+ repositories: 
+  protocol: git
+  address: ""
+ branch:
+  devel: master
+ platforms:
+  linux:
+   compilers:
+    - gcc       
+   tracks:   
+    - devel 
+   Variations: ""
+ #android:
+  #compilers: jack 
+  #tracks: 
+   #- stable
+ #ubuntu-phone:
+  #compilers: ubuntu_sdk
+  #tracks: 
+   #- stable
+ #osx:
+  #compilers: clang
+  #platform_irc: kde-mac-devel@kde.org
+  #platform_email: kde-mac
+  #tracks:
+   #- stable
+  #Variations:  
+   #- NoX11      
+  #windows: 
+   #compilers: 
+    #- vs2013
+   #platform_email: kde-windows-devel@kde.org
+   #platform_irc: kde-windows
+   #tracks: 
+    #- stable
+ products_needed: [Qt5]
+ dependencies: []
+ excluded_repositories: []
+ view: Frameworks
+ description: >
+             ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
+ email: ""
+ irc: ""
+#cioverrides
+ logrotator: [-1, 50, -1, -1]
+ upstream: []
+ downstream: []
+ priority: 1 
+ webview: true
+#Tier 1
+extra-cmake-modules:
+ <<: *defaults
+ path: kdesupport/extra-cmake-modules
+ email: "kde-frameworks-devel@kde.org"
+ repositories:
+  protocol: git
+  address: "git://anongit.kde.org/extra-cmake-modules"
+ upstream: 
+  - qt5
+ downstream:
+  - attica
+  - karchive
+  - kconfig
+  - breeze-icons
+  - bluez-qt
+  - kapidox
+  - karchive
+  - kcodecs
+  - kcoreaddons
+  - kdbusaddons
+  - kdnssd
+  - kguiaddons
+  - ki18n
+  - kidletime
+  - kitemmodels
+  - kitemviews
+  - kplotting
+  - kwidgetsaddons
+  - kwindowsystem
+  - modemmanager
+  - networkmanager
+  - oxygen-icons5
+  - solid
+  - sonnet
+  - threadweaver
+ priority: 1 
