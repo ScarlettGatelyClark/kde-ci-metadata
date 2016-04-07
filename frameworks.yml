@@ -52,7 +52,7 @@ project: &defaults
  email: "kde-frameworks-devel@kde.org"
  irc: ""
 #cioverrides
- logrotator: [-1,50,-1,-1]
+ logrotator: -1, 50, -1, -1
  upstream: []
  downstream: []
  priority: 1 
