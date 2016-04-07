@@ -21,7 +21,7 @@ project: &defaults
    tracks:   
     - devel 
    Variations: 
-    - default
+    - ''
  #android:
   #compilers: jack 
   #tracks: 
