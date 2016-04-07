@@ -53,11 +53,7 @@ project: &defaults
              ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
  email: ""
  irc: ""
- logrotator: 
-  - -1
-  - 5
-  - -1
-  - -1
+ logrotator: [-1, 5, -1, -1]
  downstream: []
  upstream: []
  priority: 1
@@ -65,7 +61,7 @@ project: &defaults
  webview: false
 qt5:
  <<: *defaults 
- project_name: qt5
+ project_name: Qt5
  repositories: 
   protocol: git
   address: git://anongit.kde.org/qt/qt5

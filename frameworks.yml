@@ -1,6 +1,7 @@
 #PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
 project: &defaults
- project_name: ""
+ pretty_name: ""
+ path: "frameworks"
  group_name: Frameworks
  active: true 
  branchGrouptracks:
@@ -58,41 +59,6 @@ project: &defaults
  priority: 1 
  webview: true
 #Tier 1
-extra-cmake-modules:
- <<: *defaults
- project_name: extra-cmake-modules
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/extra-cmake-modules"
- upstream: 
-  - qt5
- downstream:
-  - attica
-  - karchive
-  - kconfig
-  - breeze-icons
-  - bluez-qt
-  - kapidox
-  - karchive
-  - kcodecs
-  - kcoreaddons
-  - kdbusaddons
-  - kdnssd
-  - kguiaddons
-  - ki18n
-  - kidletime
-  - kitemmodels
-  - kitemviews
-  - kplotting
-  - kwidgetsaddons
-  - kwindowsystem
-  - modemmanager
-  - networkmanager
-  - oxygen-icons5
-  - solid
-  - sonnet
-  - threadweaver
- priority: 1
 attica:
  <<: *defaults
  project_name: attica
