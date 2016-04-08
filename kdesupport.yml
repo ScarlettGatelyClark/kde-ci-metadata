@@ -1,8 +1,7 @@
 #PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
 project: &defaults
  pretty_name: ""
- path: "frameworks"
- group_name: Frameworks
+ group_name: kdesupport
  active: true 
  branchGrouptracks:
   kf5-qt5: devel
