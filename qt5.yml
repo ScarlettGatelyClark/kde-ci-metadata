@@ -20,6 +20,7 @@ project: &defaults
    tracks:   
     - devel 
    Variations: ''
+   custom_build_command: 'perl init-repository -f -q \n'
  #android:
   #compilers: jack 
   #tracks: 

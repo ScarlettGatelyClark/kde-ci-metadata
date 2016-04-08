@@ -19,6 +19,7 @@ project: &defaults
    tracks:   
     - devel 
    Variations: ""
+   custom_build_command: ""
  #android:
   #compilers: jack 
   #tracks: 
