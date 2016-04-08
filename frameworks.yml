@@ -60,7 +60,6 @@ project: &defaults
 #Tier 1
 attica:
  <<: *defaults
- project_name: attica
  repositories:
   protocol: git
   address: "git://anongit.kde.org/attica"
@@ -70,7 +69,6 @@ attica:
  priority: 1
 karchive:
  <<: *defaults
- project_name: karchive
  repositories:
   protocol: git
   address: "git://anongit.kde.org/karchive"
@@ -80,7 +78,6 @@ karchive:
  priority: 1
 kconfig:
  <<: *defaults
- project_name: kconfig
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kconfig"
@@ -92,7 +89,6 @@ kconfig:
  priority: 1
 bluez-qt:
  <<: *defaults
- project_name: bluez-qt
  repositories:
   protocol: git
   address: "git://anongit.kde.org/bluez-qt"
@@ -104,7 +100,6 @@ bluez-qt:
  priority: 1
 breeze-icons:
  <<: *defaults
- project_name: breeze-icons
  repositories:
   protocol: git
   address: "git://anongit.kde.org/breeze-icons"
@@ -114,7 +109,6 @@ breeze-icons:
  priority: 1
 kapidox:
  <<: *defaults
- project_name: kapidox
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kapidox"
@@ -124,7 +118,6 @@ kapidox:
  priority: 1
 kcodecs:
  <<: *defaults
- project_name: kcodecs
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kcodecs"
@@ -136,7 +129,6 @@ kcodecs:
  priority: 1
 kcoreaddons:
  <<: *defaults
- project_name: kcoreaddons
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kcoreaddons"
@@ -156,7 +148,6 @@ kcoreaddons:
  priority: 1
 kdbusaddons:
  <<: *defaults
- project_name: kdbusaddons
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdbusaddons"
@@ -166,7 +157,6 @@ kdbusaddons:
  priority: 1
 kdnssd:
  <<: *defaults
- project_name: kdnssd
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdnssd"
@@ -176,7 +166,6 @@ kdnssd:
  priority: 1
 kguiaddons:
  <<: *defaults
- project_name: kguiaddons
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kguiaddons"
@@ -186,7 +175,6 @@ kguiaddons:
  priority: 1
 ki18n:
  <<: *defaults
- project_name: ki18n
  repositories:
   protocol: git
   address: "git://anongit.kde.org/ki18n"
@@ -203,7 +191,6 @@ ki18n:
  priority: 1
 kidletime:
  <<: *defaults
- project_name: kidletime
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kidletime"
@@ -213,7 +200,6 @@ kidletime:
  priority: 1
 kitemmodels:
  <<: *defaults
- project_name: kitemmodels
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kitemmodels"
@@ -223,7 +209,6 @@ kitemmodels:
  priority: 1
 kitemviews:
  <<: *defaults
- project_name: kitemviews
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kitemviews"
@@ -233,7 +218,6 @@ kitemviews:
  priority: 1
 kplotting:
  <<: *defaults
- project_name: kplotting
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kplotting"
@@ -245,7 +229,6 @@ kplotting:
  priority: 1
 kwidgetsaddons:
  <<: *defaults
- project_name: kwidgetsaddons
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kwidgetsaddons"
@@ -255,7 +238,6 @@ kwidgetsaddons:
  priority: 1
 kwindowsystem:
  <<: *defaults
- project_name: kwindowsystem
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kwindowsystem"
@@ -297,7 +279,6 @@ kwindowsystem:
  priority: 1
 modemmanager-qt:
  <<: *defaults
- project_name: modemmanager-qt
  repositories:
   protocol: git
   address: "git://anongit.kde.org/modemmanager-qt"
@@ -307,7 +288,6 @@ modemmanager-qt:
  priority: 1
 networkmanager-qt:
  <<: *defaults
- project_name: networkmanager-qt
  repositories:
   protocol: git
   address: "git://anongit.kde.org/networkmanager-qt"
@@ -319,7 +299,6 @@ networkmanager-qt:
  priority: 1
 oxygen-icons5:
  <<: *defaults
- project_name: oxygen-icons5
  repositories:
   protocol: git
   address: "git://anongit.kde.org/oxygen-icons5"
@@ -330,7 +309,6 @@ oxygen-icons5:
  priority: 1
 solid:
  <<: *defaults
- project_name: solid
  repositories:
   protocol: git
   address: "git://anongit.kde.org/solid"
@@ -340,7 +318,6 @@ solid:
  priority: 1
 sonnet:
  <<: *defaults
- project_name: sonnet
  repositories:
   protocol: git
   address: "git://anongit.kde.org/sonnet"
@@ -350,7 +327,6 @@ sonnet:
  priority: 1
 threadweaver:
  <<: *defaults
- project_name: threadweaver
  repositories:
   protocol: git
   address: "git://anongit.kde.org/threadweaver"
@@ -363,7 +339,6 @@ threadweaver:
 #tier 2
 kactivities:
  <<: *defaults
- project_name: kactivities
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kactivities"
@@ -385,7 +360,6 @@ kactivities:
  priority: 1
 kactivities-stats:
  <<: *defaults
- project_name: kactivities-stats
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kactivities-stats"
@@ -398,7 +372,6 @@ kactivities-stats:
  priority: 1
 kauth:
  <<: *defaults
- project_name: kauth
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kauth"
@@ -407,7 +380,6 @@ kauth:
   - extra-cmake-modules
 kcompletion:
  <<: *defaults
- project_name: kcompletion
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kcompletion"
@@ -418,7 +390,6 @@ kcompletion:
   - kwidgetsaddons
 kcrash:
  <<: *defaults
- project_name: kcrash
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kcrash"
@@ -427,7 +398,6 @@ kcrash:
   - extra-cmake-modules
 kdoctools:
  <<: *defaults
- project_name: kdoctools
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdoctools"
@@ -438,7 +408,6 @@ kdoctools:
   - kjs
 kfilemetadata:
  <<: *defaults
- project_name: kfilemetadata
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kfilemetadata"
@@ -447,7 +416,6 @@ kfilemetadata:
   - extra-cmake-modules
 kimageformats:
  <<: *defaults
- project_name: kimageformats
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kimageformats"
@@ -456,7 +424,6 @@ kimageformats:
   - extra-cmake-modules
 kjobwidgets:
  <<: *defaults
- project_name: kjobwidgets
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kjobwidgets"
@@ -465,7 +432,6 @@ kjobwidgets:
   - extra-cmake-modules
 knotifications:
  <<: *defaults
- project_name: knotifications
  repositories:
   protocol: git
   address: "git://anongit.kde.org/knotifications"
@@ -475,7 +441,6 @@ knotifications:
  email: "mklapetek@kde.org, kde-frameworks-devel@kde.org"
 kpty:
  <<: *defaults
- project_name: kpty
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kpty"
@@ -484,7 +449,6 @@ kpty:
   - extra-cmake-modules
 kunitconversion:
  <<: *defaults
- project_name: kunitconversion
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kunitconversion"
@@ -493,7 +457,6 @@ kunitconversion:
   - extra-cmake-modules
 kpackage:
  <<: *defaults
- project_name: kpackage
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kpackage"
@@ -507,7 +470,6 @@ kpackage:
 #tier 3
 baloo:
  <<: *defaults
- project_name: baloo
  repositories:
   protocol: git
   address: "git://anongit.kde.org/baloo"
@@ -517,7 +479,6 @@ baloo:
  email: "me@vhanda.in, kde-frameworks-devel@kde.org"
 kbookmarks:
  <<: *defaults
- project_name: kbookmarks
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kbookmarks"
@@ -533,7 +494,6 @@ kbookmarks:
   - kio
 kcmutils:
  <<: *defaults
- project_name: kcmutils
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kcmutils"
@@ -542,7 +502,6 @@ kcmutils:
   - extra-cmake-modules
 kconfigwidgets:
  <<: *defaults
- project_name: kconfigwidgets
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kconfigwidgets"
@@ -564,7 +523,6 @@ kconfigwidgets:
   - khtml
 kdeclarative:
  <<: *defaults
- project_name: kdeclarative
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdeclarative"
@@ -578,7 +536,6 @@ kdeclarative:
   - kpackage
 kded:
  <<: *defaults
- project_name: kded
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kded"
@@ -595,7 +552,6 @@ kded:
   - kdoctools
 kdesignerplugin:
  <<: *defaults
- project_name: kdesignerplugin
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdesignerplugin"
@@ -608,7 +564,6 @@ kdesignerplugin:
   - kdewebkit
 kdesu:
  <<: *defaults
- project_name: kdesu
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdesu"
@@ -620,7 +575,6 @@ kdesu:
   - kpty
 kdewebkit:
  <<: *defaults
- project_name: kdewebkit
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdewebkit"
@@ -633,7 +587,6 @@ kdewebkit:
   - knotifications
 kemoticons:
  <<: *defaults
- project_name: kemoticons
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kemoticons"
@@ -644,7 +597,6 @@ kemoticons:
   - kservice
 kglobalaccel:
  <<: *defaults
- project_name: kglobalaccel
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kglobalaccel"
@@ -658,7 +610,6 @@ kglobalaccel:
   - ki18n
 kiconthemes:
  <<: *defaults
- project_name: kiconthemes
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kiconthemes"
@@ -671,7 +622,6 @@ kiconthemes:
   - kitemviews
 kinit:
  <<: *defaults
- project_name: kinit
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kinit"
@@ -686,7 +636,6 @@ kinit:
   - kdoctools
 kio:
  <<: *defaults
- project_name: kio
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kio"
@@ -725,7 +674,6 @@ kio:
   - kross
 knewstuff:
  <<: *defaults
- project_name: knewstuff
  repositories:
   protocol: git
   address: "git://anongit.kde.org/knewstuff"
@@ -744,7 +692,6 @@ knewstuff:
   - kio
 knotifyconfig:
  <<: *defaults
- project_name: knotifyconfig
  repositories:
   protocol: git
   address: "git://anongit.kde.org/knotifyconfig"
@@ -756,7 +703,6 @@ knotifyconfig:
   - knotifications
 kparts:
  <<: *defaults
- project_name: kparts
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kparts"
@@ -773,7 +719,6 @@ kparts:
   - ktexteditor
 kpeople:
  <<: *defaults
- project_name: kpeople
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kpeople"
@@ -788,7 +733,6 @@ kpeople:
   - kitemviews
 kservice:
  <<: *defaults
- project_name: kservice
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kservice"
@@ -806,7 +750,6 @@ kservice:
   - krunner
 ktexteditor:
  <<: *defaults
- project_name: ktexteditor
  repositories:
   protocol: git
   address: "git://anongit.kde.org/ktexteditor"
@@ -824,7 +767,6 @@ ktexteditor:
   - kxmlgui
 ktextwidgets:
  <<: *defaults
- project_name: ktextwidgets
  repositories:
   protocol: git
   address: "git://anongit.kde.org/ktextwidgets"
@@ -842,7 +784,6 @@ ktextwidgets:
   - sonnet
 kwallet:
  <<: *defaults
- project_name: kwallet
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kwallet"
@@ -860,7 +801,6 @@ kwallet:
   - kwidgetsaddons
 kxmlgui:
  <<: *defaults
- project_name: kxmlgui
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kxmlgui"
@@ -882,7 +822,6 @@ kxmlgui:
   - kbookmarks
 kxmlrpcclient:
  <<: *defaults
- project_name: kxmlrpcclient
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kxmlrpcclient"
@@ -892,7 +831,6 @@ kxmlrpcclient:
   - kio
 plasma-framework:
  <<: *defaults
- project_name: plasma-framework
  repositories:
   protocol: git
   address: "git://anongit.kde.org/plasma-framework"
@@ -972,7 +910,6 @@ plasma-framework:
 #tier 4
 frameworkintegration:
  <<: *defaults
- project_name: frameworkintegration
  repositories:
   protocol: git
   address: "git://anongit.kde.org/frameworkintegration"
@@ -992,7 +929,6 @@ frameworkintegration:
 #Porting aids
 kdelibs4support:
  <<: *defaults
- project_name: kdelibs4support
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kdelibs4support"
@@ -1025,7 +961,6 @@ kdelibs4support:
   - kglobalaccel
 khtml:
  <<: *defaults
- project_name: khtml
  repositories:
   protocol: git
   address: "git://anongit.kde.org/khtml"
@@ -1034,7 +969,6 @@ khtml:
   - extra-cmake-modules
 kjs:
  <<: *defaults
- project_name: kjs
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kjs"
@@ -1046,7 +980,6 @@ kjs:
   - kjsembed
 kjsembed:
  <<: *defaults
- project_name: kjsembed
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kjsembed"
@@ -1058,7 +991,6 @@ kjsembed:
   - kdoctools
 kmediaplayer:
  <<: *defaults
- project_name: kmediaplayer
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kmediaplayer"
@@ -1070,7 +1002,6 @@ kmediaplayer:
   - kxmlgui
 kross:
  <<: *defaults
- project_name: kross
  repositories:
   protocol: git
   address: "git://anongit.kde.org/kross"
@@ -1083,7 +1014,6 @@ kross:
   - kparts
 krunner:
  <<: *defaults
- project_name: krunner
  repositories:
   protocol: git
   address: "git://anongit.kde.org/krunner"
