@@ -60,7 +60,6 @@ project: &defaults
 #Tier 1
 extra-cmake-modules:
  <<: *defaults
- path: kdesupport/extra-cmake-modules
  email: "kde-frameworks-devel@kde.org"
  repositories:
   protocol: git
