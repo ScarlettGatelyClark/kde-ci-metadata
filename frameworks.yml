@@ -19,7 +19,7 @@ project: &defaults
    tracks:   
     - devel 
    Variations: ""
-   custom_build_command: ""
+   lin_custom_build_command: ""
  #android:
   #compilers: jack 
   #tracks: 
@@ -43,6 +43,7 @@ project: &defaults
    #platform_irc: kde-windows
    #tracks: 
     #- stable
+ custom_build_command: ""
  products_needed: [Qt5]
  dependencies: []
  excluded_repositories: []

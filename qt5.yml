@@ -20,7 +20,7 @@ project: &defaults
    tracks:   
     - devel 
    Variations: ''
-   custom_build_command: 'perl init-repository -f -q \n'
+   lin_custom_build_command: 
  #android:
   #compilers: jack 
   #tracks: 
@@ -44,6 +44,7 @@ project: &defaults
    #platform_irc: kde-windows
    #tracks: 
     #- stable
+ custom_build_command: 'perl init-repository -f -q \n'
  products_needed: []
  dependencies: []
  excluded_repositories: []
