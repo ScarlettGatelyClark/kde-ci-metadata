@@ -1,6 +1,5 @@
 # PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
 project: &defaults
- pretty_name: ""
  group_name: qt5
  branchGrouptracks:
   kf5-qt5: devel
@@ -60,7 +59,6 @@ project: &defaults
  webview: false
 qt5:
  <<: *defaults 
- pretty_name: Qt5
  repositories: 
   protocol: git
   address: git://anongit.kde.org/qt/qt5

@@ -1,6 +1,5 @@
 #PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
 project: &defaults
- pretty_name: ""
  group_name: frameworks
  active: true 
  branchGrouptracks:
