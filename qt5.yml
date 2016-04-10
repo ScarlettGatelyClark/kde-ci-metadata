@@ -16,8 +16,8 @@ project: &defaults
  products_needed: []
  dependencies: 
    "*":
-   products: 
-   repositories:   
+   products: ''
+   repositories: ''  
  excluded_repositories: []
  platforms:
   Linux:
