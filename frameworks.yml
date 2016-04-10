@@ -3,7 +3,7 @@ project: &defaults
  active: true 
  branchGrouptracks:
   kf5-qt5: devel  
- products_needed: 
+ products_needed: []
  repositories: 
   protocol: git
   address: ""
