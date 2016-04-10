@@ -58,6 +58,7 @@ project: &defaults
  downstream: []
  priority: 1 
  webview: true
+ gen_publishers: true
 #Tier 1
 attica:
  <<: *defaults

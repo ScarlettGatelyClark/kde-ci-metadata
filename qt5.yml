@@ -59,6 +59,7 @@ project: &defaults
  priority: 1
  active: true
  webview: false
+ gen_publishers: false
 qt5:
  <<: *defaults 
  repositories: 
