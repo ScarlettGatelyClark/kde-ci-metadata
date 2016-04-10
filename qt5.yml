@@ -9,10 +9,16 @@ project: &defaults
  repositories: 
   protocol: git
   address: git://anongit.kde.org/qt/qt5
- branch:
-  devel: '5.6'
-  stable: '5.5'
-  minimum: '5.3'
+  qt/qt5:
+   devel: '5.6'
+   stable: '5.5'
+   minimum: '5.3'
+ products_needed: []
+ dependencies: 
+   "*":
+   products: 
+   repositories:   
+ excluded_repositories: []
  platforms:
   Linux:
    compilers:
@@ -45,9 +51,6 @@ project: &defaults
    #tracks: 
     #- stable
  custom_build_command: 'perl init-repository -f -q'
- products_needed: []
- dependencies: []
- excluded_repositories: []
  view: QT
  description: >
              ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
