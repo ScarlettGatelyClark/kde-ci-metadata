@@ -1,17 +1,20 @@
-#PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
 project: &defaults
  group_name: frameworks
  active: true 
  branchGrouptracks:
-  kf5-qt5: devel
-  stable-kf5-qt5: devel
-  kf5-minimum: devel
-  kf5-qt5-patch: devel
+  kf5-qt5: devel  
+ products_needed: 
  repositories: 
   protocol: git
   address: ""
- branch:
-  devel: master
+  frameworks/*:
+  	- devel: master 
+ dependencies: 
+  - *:
+   - products: Qt5
+   - repositories:
+   	- frameworks/*: kdesupport/extra-cmake-modules
+ excluded_repositories: []
  platforms:
   Linux:
    compilers:
@@ -44,9 +47,6 @@ project: &defaults
    #tracks: 
     #- stable
  custom_build_command: ""
- products_needed: [Qt5]
- dependencies: []
- excluded_repositories: []
  view: Frameworks
  description: >
              ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
