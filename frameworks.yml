@@ -10,7 +10,7 @@ project: &defaults
   frameworks/*:
    - devel: master 
  dependencies: 
-  - *:
+  - * :
    - products: Qt5
    - repositories:
    	- frameworks/*: kdesupport/extra-cmake-modules
