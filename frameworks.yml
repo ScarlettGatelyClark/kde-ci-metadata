@@ -8,7 +8,7 @@ project: &defaults
   protocol: git
   address: ""
   frameworks/*:
-  	- devel: master 
+   - devel: master 
  dependencies: 
   - *:
    - products: Qt5
