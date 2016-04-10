@@ -16,8 +16,8 @@ project: &defaults
  products_needed: []
  dependencies: 
    "*":
-   products: ''
-   repositories: ''  
+    products: none
+    repositories: none
  excluded_repositories: []
  platforms:
   Linux:
@@ -65,9 +65,6 @@ project: &defaults
  gen_publishers: false
 qt5:
  <<: *defaults 
- repositories: 
-  protocol: git
-  address: git://anongit.kde.org/qt/qt5
  excluded_repositories: 
   - qt5/qtcanvas3d
   - qt5/qtx11extras
