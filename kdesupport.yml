@@ -47,7 +47,7 @@ project: &defaults
  products_needed: [Qt5]
  dependencies: []
  excluded_repositories: []
- view: Frameworks
+ view: KDESupport
  description: >
              ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
  email: ""
