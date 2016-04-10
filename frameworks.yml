@@ -13,7 +13,7 @@ project: &defaults
   "*":
    products: Qt5
    repositories:
-   	- frameworks/*: kdesupport/extra-cmake-modules
+    - frameworks/*: kdesupport/extra-cmake-modules
  excluded_repositories: []
  platforms:
   Linux:
