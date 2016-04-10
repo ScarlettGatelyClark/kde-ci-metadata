@@ -15,9 +15,9 @@ project: &defaults
    minimum: '5.3'
  products_needed: []
  dependencies: 
-   "*":
-    products: none
-    repositories: none
+  qt/qt5:
+   products: none
+   repositories: none
  excluded_repositories: []
  platforms:
   Linux:

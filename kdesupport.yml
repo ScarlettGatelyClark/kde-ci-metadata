@@ -14,7 +14,7 @@ project: &defaults
    devel: master
  products_needed: []
  dependencies: 
-   "*":
+   kdesupport/*:
    products: Qt5
    repositories:
     - frameworks/*: kdesupport/extra-cmake-modules
