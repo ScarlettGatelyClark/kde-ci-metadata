@@ -44,7 +44,7 @@ project: &defaults
    #platform_irc: kde-windows
    #tracks: 
     #- stable
- custom_build_command: 'perl init-repository -f -q \n'
+ custom_build_command: 'perl init-repository -f -q'
  products_needed: []
  dependencies: []
  excluded_repositories: []

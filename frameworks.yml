@@ -243,7 +243,7 @@ kwindowsystem:
   protocol: git
   address: "git://anongit.kde.org/kwindowsystem"
  platforms:
-  linux:
+  Linux:
    compilers:
     - gcc       
    tracks:   
@@ -251,6 +251,7 @@ kwindowsystem:
    Variations:  
     - NoX11
     - All
+   lin_custom_build_command: ""   
  #android:
   #compilers: jack 
   #tracks: 
@@ -836,7 +837,7 @@ plasma-framework:
   protocol: git
   address: "git://anongit.kde.org/plasma-framework"
  platforms:
-  linux:
+  Linux:
    compilers:
     - gcc       
    tracks:   
@@ -844,6 +845,7 @@ plasma-framework:
    Variations:  
     - NoX11
     - All
+   lin_custom_build_command: ""
  #android:
   #compilers: jack 
   #tracks: 
