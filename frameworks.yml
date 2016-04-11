@@ -7,7 +7,7 @@ project: &defaults
  repositories: 
   protocol: git
   address: ""
-  branches:
+  &branches:
    devel: master   
  dependencies: 
   frameworks/*:
@@ -65,6 +65,7 @@ attica:
  repositories:
   protocol: git
   address: "git://anongit.kde.org/attica"
+  <<: *branches
  upstream: 
   - qt5
   - extra-cmake-modules
