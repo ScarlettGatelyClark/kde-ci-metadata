@@ -7,7 +7,7 @@ project: &defaults
  repositories: 
   protocol: git
   address: ""
-  kdesupport/*:
+  branches:
    - 
     devel: master
  products_needed: []

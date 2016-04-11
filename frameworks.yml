@@ -7,7 +7,7 @@ project: &defaults
  repositories: 
   protocol: git
   address: ""
-  frameworks/*:
+  branches:
    -
     devel: master   
  dependencies: 
