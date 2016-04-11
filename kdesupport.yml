@@ -8,7 +8,8 @@ project: &defaults
   protocol: git
   address: ""
   kdesupport/*:
-   devel: master
+   -
+    devel: master
  products_needed: []
  dependencies: 
    kdesupport/*:
