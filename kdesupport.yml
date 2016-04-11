@@ -3,10 +3,7 @@ project: &defaults
  group_name: kdesupport
  active: true 
  branchGrouptracks:
-  kf5-qt5: devel
-  stable-kf5-qt5: devel
-  kf5-minimum: devel
-  kf5-qt5-patch: devel
+  kf5-qt5: devel 
  repositories: 
   protocol: git
   address: ""
