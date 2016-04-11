@@ -65,7 +65,7 @@ attica:
  repositories:
   protocol: git
   address: "git://anongit.kde.org/attica"
- *branches
+  <<: *branches
  upstream: 
   - qt5
   - extra-cmake-modules
