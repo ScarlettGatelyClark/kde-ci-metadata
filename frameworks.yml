@@ -9,7 +9,8 @@ project: &defaults
   address: ""
   frameworks/*:
    -
-    devel: master 
+    devel: master
+    stable: master 
  dependencies: 
   frameworks/*:
    products: Qt5
