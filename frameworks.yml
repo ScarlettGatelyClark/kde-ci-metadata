@@ -7,7 +7,7 @@ project: &defaults
  repositories: 
   protocol: git
   address: ""
-  &branches:
+  frameworks/*: &branches
    devel: master   
  dependencies: 
   frameworks/*:
@@ -75,6 +75,8 @@ karchive:
  repositories:
   protocol: git
   address: "git://anongit.kde.org/karchive"
+  frameworks/karchive:
+   devel: test
  upstream: 
   - qt5
   - extra-cmake-modules
