@@ -25,6 +25,8 @@ project: &defaults
     - gcc       
    tracks:   
     - devel 
+    - stable
+    - minimum
    Variations: ''
    lin_custom_build_command: 
  #android:
