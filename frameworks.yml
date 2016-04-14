@@ -75,7 +75,7 @@ karchive:
  repositories:
   protocol: git
   address: "git://anongit.kde.org/karchive"
-  frameworks/karchive: branches
+  frameworks/karchive: 
    devel: test
  upstream: 
   - qt5
