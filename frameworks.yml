@@ -7,8 +7,8 @@ project: &defaults
  repositories: 
   protocol: git
   address: ""
-  frameworks/*: &branches
-   devel: master   
+ frameworks/*: 
+   devel: master    
  dependencies: 
   frameworks/*:
    products: Qt5
@@ -64,8 +64,7 @@ attica:
  <<: *defaults
  repositories:
   protocol: git
-  address: "git://anongit.kde.org/attica"
-  *branches
+  address: "git://anongit.kde.org/attica"  
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -75,8 +74,8 @@ karchive:
  repositories:
   protocol: git
   address: "git://anongit.kde.org/karchive"
-  frameworks/karchive: 
-   devel: test
+ frameworks/karchive: 
+   devel: test 
  upstream: 
   - qt5
   - extra-cmake-modules
