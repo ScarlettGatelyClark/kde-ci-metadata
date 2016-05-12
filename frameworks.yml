@@ -7,7 +7,7 @@ project: &defaults
  repositories: 
   protocol: git
   address: "git://anongit.kde.org/${jobkey}"
-  branch: 
+  branches: 
    devel: master    
  dependencies: 
   products:
