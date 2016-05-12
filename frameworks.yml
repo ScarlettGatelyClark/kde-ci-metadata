@@ -6,7 +6,7 @@ project: &defaults
  products_needed: []
  repositories: 
   protocol: git
-  address: ""
+  address: "git://anongit.kde.org/${jobname}"
   branch: 
    devel: master    
  dependencies: 
@@ -60,9 +60,6 @@ project: &defaults
 #Tier 1
 attica:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/attica"  
  upstream: 
   - qt5
   - extra-cmake-modules
