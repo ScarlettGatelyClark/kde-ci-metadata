@@ -72,7 +72,7 @@ karchive:
  priority: 1
 kconfig:
  <<: *defaults
-upstream: 
+ upstream: 
   - qt5
   - extra-cmake-modules
  downstream: 
