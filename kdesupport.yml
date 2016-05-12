@@ -6,7 +6,7 @@ project: &defaults
   kf5-qt5: devel 
  repositories: 
   protocol: git
-  address: ""
+  address: "git://anongit.kde.org/${jobname}"
   branches:
    devel: master
  products_needed: []
@@ -63,9 +63,6 @@ project: &defaults
 extra-cmake-modules:
  <<: *defaults
  email: "kde-frameworks-devel@kde.org"
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/extra-cmake-modules"
  upstream: 
   - qt5
  downstream:
