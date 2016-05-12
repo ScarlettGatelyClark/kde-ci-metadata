@@ -9,7 +9,7 @@ project: &defaults
  repositories: 
   protocol: git
   address: git://anongit.kde.org/qt/qt5
-  qt5/*: &branches
+  branches:
    devel: '5.6'
    stable: '5.5'
    minimum: '5.3'

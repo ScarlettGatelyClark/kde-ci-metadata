@@ -7,13 +7,11 @@ project: &defaults
  repositories: 
   protocol: git
   address: ""
- frameworks/*: 
+  branch: 
    devel: master    
  dependencies: 
-  frameworks/*:
-   products: Qt5
-   repositories:
-    - frameworks/*: kdesupport/extra-cmake-modules
+  products:
+  repositories:    
  excluded_repositories: []
  platforms:
   Linux:

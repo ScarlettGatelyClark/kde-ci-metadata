@@ -10,11 +10,10 @@ project: &defaults
   branches:
    devel: master
  products_needed: []
- dependencies: 
-   kdesupport/*:
+ dependencies:   
    products: Qt5
    repositories:
-    - frameworks/*: kdesupport/extra-cmake-modules
+    - kdesupport/extra-cmake-modules
  excluded_repositories: []
  platforms:
   Linux:
