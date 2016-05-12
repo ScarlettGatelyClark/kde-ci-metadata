@@ -6,7 +6,7 @@ project: &defaults
  products_needed: []
  repositories: 
   protocol: git
-  address: "git://anongit.kde.org/${jobname}"
+  address: "git://anongit.kde.org/${jobkey}"
   branch: 
    devel: master    
  dependencies: 
@@ -66,21 +66,13 @@ attica:
  priority: 1
 karchive:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/karchive"
- frameworks/karchive: 
-   devel: test 
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kconfig:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kconfig"
- upstream: 
+upstream: 
   - qt5
   - extra-cmake-modules
  downstream: 
@@ -88,9 +80,6 @@ kconfig:
  priority: 1
 bluez-qt:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/bluez-qt"
  upstream: 
   - qt5
   - extra-cmake-modules
