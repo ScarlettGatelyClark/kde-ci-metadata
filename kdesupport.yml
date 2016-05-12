@@ -6,7 +6,7 @@ project: &defaults
   kf5-qt5: devel 
  repositories: 
   protocol: git
-  address: "git://anongit.kde.org/${jobname}"
+  address: "git://anongit.kde.org/${jobkey}"
   branches:
    devel: master
  products_needed: []
