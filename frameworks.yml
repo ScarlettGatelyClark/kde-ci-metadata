@@ -136,16 +136,16 @@ kdnssd:
  priority: 1
 kguiaddons:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 ki18n:
  <<: *defaults 
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - kdoctools
   - kunitconversion
   - ktextwidgets
