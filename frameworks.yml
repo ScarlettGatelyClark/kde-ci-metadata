@@ -467,7 +467,7 @@ kglobalaccel:
   - ki18n
 kiconthemes:
  <<: *defaults
-  upstream: 
+ upstream: 
   - qt5
   - extra-cmake-modules
   - ki18n
