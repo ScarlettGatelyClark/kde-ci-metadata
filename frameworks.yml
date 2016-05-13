@@ -88,27 +88,18 @@ bluez-qt:
  priority: 1
 breeze-icons:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/breeze-icons"
  upstream: 
   - qt5
   - extra-cmake-modules 
  priority: 1
 kapidox:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kapidox"
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kcodecs:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kcodecs"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -117,9 +108,6 @@ kcodecs:
  priority: 1
 kcoreaddons:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kcoreaddons"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -136,36 +124,24 @@ kcoreaddons:
  priority: 1
 kdbusaddons:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdbusaddons"
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kdnssd:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdnssd"
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kguiaddons:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kguiaddons"
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 ki18n:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/ki18n"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -178,37 +154,25 @@ ki18n:
   - kfilemetadata
  priority: 1
 kidletime:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kidletime"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kitemmodels:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kitemmodels"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kitemviews:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kitemviews"
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kplotting:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kplotting"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -216,19 +180,13 @@ kplotting:
   - kdesignerplugin
  priority: 1
 kwidgetsaddons:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kwidgetsaddons"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 kwindowsystem:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kwindowsystem"
  platforms:
   Linux:
    compilers:
@@ -268,18 +226,12 @@ kwindowsystem:
  priority: 1
 modemmanager-qt:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/modemmanager-qt"
  upstream: 
    - qt5
    - extra-cmake-modules
  priority: 1
 networkmanager-qt:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/networkmanager-qt"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -287,38 +239,26 @@ networkmanager-qt:
   - plasma-nm
  priority: 1
 oxygen-icons5:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/oxygen-icons5"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
  email: "kainz.a@gmail.com, plasma-devel@kde.org"
  priority: 1
 solid:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/solid"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 sonnet:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/sonnet"
  upstream: 
   - qt5
   - extra-cmake-modules
  priority: 1
 threadweaver:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/threadweaver"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -327,10 +267,7 @@ threadweaver:
  priority: 1
 #tier 2
 kactivities:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kactivities"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -348,10 +285,7 @@ kactivities:
   - kactivities-stats
  priority: 1
 kactivities-stats:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kactivities-stats"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -360,95 +294,62 @@ kactivities-stats:
   - kactivitymanagerd
  priority: 1
 kauth:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kauth"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
 kcompletion:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kcompletion"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
   - kconfig
   - kwidgetsaddons
 kcrash:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kcrash"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
 kdoctools:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdoctools"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
  downstream: 
   - kjs
 kfilemetadata:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kfilemetadata"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
 kimageformats:
- <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kimageformats"
+ <<: *defaults 
  upstream: 
   - qt5
   - extra-cmake-modules
 kjobwidgets:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kjobwidgets"
  upstream: 
   - qt5
   - extra-cmake-modules
 knotifications:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/knotifications"
  upstream: 
   - qt5
   - extra-cmake-modules
  email: "mklapetek@kde.org, kde-frameworks-devel@kde.org"
 kpty:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kpty"
  upstream: 
   - qt5
   - extra-cmake-modules
 kunitconversion:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kunitconversion"
  upstream: 
   - qt5
   - extra-cmake-modules
 kpackage:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kpackage"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -459,18 +360,12 @@ kpackage:
 #tier 3
 baloo:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/baloo"
  upstream: 
   - qt5
   - extra-cmake-modules
  email: "me@vhanda.in, kde-frameworks-devel@kde.org"
 kbookmarks:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kbookmarks"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -483,17 +378,11 @@ kbookmarks:
   - kio
 kcmutils:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kcmutils"
  upstream: 
   - qt5
   - extra-cmake-modules
 kconfigwidgets:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kconfigwidgets"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -512,9 +401,6 @@ kconfigwidgets:
   - khtml
 kdeclarative:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdeclarative"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -525,9 +411,6 @@ kdeclarative:
   - kpackage
 kded:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kded"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -541,9 +424,6 @@ kded:
   - kdoctools
 kdesignerplugin:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdesignerplugin"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -553,9 +433,6 @@ kdesignerplugin:
   - kdewebkit
 kdesu:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdesu"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -564,9 +441,6 @@ kdesu:
   - kpty
 kdewebkit:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdewebkit"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -576,9 +450,6 @@ kdewebkit:
   - knotifications
 kemoticons:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kemoticons"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -586,9 +457,6 @@ kemoticons:
   - kservice
 kglobalaccel:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kglobalaccel"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -599,10 +467,7 @@ kglobalaccel:
   - ki18n
 kiconthemes:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kiconthemes"
- upstream: 
+  upstream: 
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -611,9 +476,6 @@ kiconthemes:
   - kitemviews
 kinit:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kinit"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -625,9 +487,6 @@ kinit:
   - kdoctools
 kio:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kio"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -663,9 +522,6 @@ kio:
   - kross
 knewstuff:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/knewstuff"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -681,9 +537,6 @@ knewstuff:
   - kio
 knotifyconfig:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/knotifyconfig"
  upstream: 
   - qt5
   - extra-cmake-modules   
@@ -692,9 +545,6 @@ knotifyconfig:
   - knotifications
 kparts:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kparts"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -708,9 +558,6 @@ kparts:
   - ktexteditor
 kpeople:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kpeople"
  irc: "#kde-telepathy"
  upstream: 
   - qt5
@@ -722,9 +569,6 @@ kpeople:
   - kitemviews
 kservice:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kservice"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -739,9 +583,6 @@ kservice:
   - krunner
 ktexteditor:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/ktexteditor"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -756,9 +597,6 @@ ktexteditor:
   - kxmlgui
 ktextwidgets:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/ktextwidgets"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -773,9 +611,6 @@ ktextwidgets:
   - sonnet
 kwallet:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kwallet"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -790,9 +625,6 @@ kwallet:
   - kwidgetsaddons
 kxmlgui:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kxmlgui"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -811,18 +643,12 @@ kxmlgui:
   - kbookmarks
 kxmlrpcclient:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kxmlrpcclient"
  upstream: 
   - qt5
   - extra-cmake-modules
   - kio
 plasma-framework:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/plasma-framework"
  platforms:
   Linux:
    compilers:
@@ -900,9 +726,6 @@ plasma-framework:
 #tier 4
 frameworkintegration:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/frameworkintegration"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -919,9 +742,6 @@ frameworkintegration:
 #Porting aids
 kdelibs4support:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kdelibs4support"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -951,17 +771,11 @@ kdelibs4support:
   - kglobalaccel
 khtml:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/khtml"
  upstream: 
   - qt5
   - extra-cmake-modules
 kjs:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kjs"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -970,9 +784,6 @@ kjs:
   - kjsembed
 kjsembed:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kjsembed"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -981,9 +792,6 @@ kjsembed:
   - kdoctools
 kmediaplayer:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kmediaplayer"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -992,9 +800,6 @@ kmediaplayer:
   - kxmlgui
 kross:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/kross"
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -1004,9 +809,6 @@ kross:
   - kparts
 krunner:
  <<: *defaults
- repositories:
-  protocol: git
-  address: "git://anongit.kde.org/krunner"
  upstream: 
   - qt5
   - extra-cmake-modules
