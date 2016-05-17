@@ -6,7 +6,7 @@ project: &defaults
  products_needed: []
  repositories: 
   protocol: git
-  address: "git://anongit.kde.org/${jobkey}"
+  address: "git://anongit.kde.org/"
   branches: 
    devel: master    
  dependencies: 
