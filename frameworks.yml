@@ -134,25 +134,25 @@ kdnssd:
   - qt5
   - extra-cmake-modules
  priority: 1
-#kguiaddons:
-# <<: *defaults
+kguiaddons:
+  <<: *defaults
+  upstream:
+    - qt5
+    - extra-cmake-modules
+  priority: 1
+#ki18n:
+#<<: *defaults 
 # upstream:
 #  - qt5
 #  - extra-cmake-modules
+# downstream:
+#  - kdoctools
+#  - kunitconversion
+#  - ktextwidgets
+#  - kiconthemes
+#  - kxmlgui
+#  - kfilemetadata
 # priority: 1
-ki18n:
- <<: *defaults 
- upstream:
-  - qt5
-  - extra-cmake-modules
- downstream:
-  - kdoctools
-  - kunitconversion
-  - ktextwidgets
-  - kiconthemes
-  - kxmlgui
-  - kfilemetadata
- priority: 1
 kidletime:
  <<: *defaults 
  upstream: 
