@@ -134,12 +134,12 @@ kdnssd:
   - qt5
   - extra-cmake-modules
  priority: 1
-kguiaddons:
- <<: *defaults
- upstream:
-  - qt5
-  - extra-cmake-modules
- priority: 1
+#kguiaddons:
+# <<: *defaults
+# upstream:
+#  - qt5
+#  - extra-cmake-modules
+# priority: 1
 ki18n:
  <<: *defaults 
  upstream:
