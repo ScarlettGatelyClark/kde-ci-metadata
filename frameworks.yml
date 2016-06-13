@@ -140,76 +140,6 @@ kguiaddons:
     - qt5
     - extra-cmake-modules
   priority: 1
-ki18n:
- group_name: frameworks
- active: true 
- branchGrouptracks:
-  kf5-qt5: devel  
- products_needed: []
- repositories: 
-  protocol: git
-  address: "git://anongit.kde.org/"
-  branches: 
-   devel: master    
- dependencies: 
-  products:
-  repositories:    
- excluded_repositories: []
- platforms:
-  Linux:
-   compilers:
-    - gcc       
-   tracks:   
-    - devel 
-   Variations: ""
-   lin_custom_build_command: ""
- #android:
-  #compilers: jack 
-  #tracks: 
-   #- stable
- #snappy:
-  #compilers: ubuntu_sdk
-  #tracks: 
-   #- stable
- #osx:
-  #compilers: clang
-  #platform_irc: kde-mac-devel@kde.org
-  #platform_email: kde-mac
-  #tracks:
-   #- stable
-  #Variations:  
-   #- NoX11      
-  #windows: 
-   #compilers: 
-    #- vs2013
-   #platform_email: kde-windows-devel@kde.org
-   #platform_irc: kde-windows
-   #tracks: 
-    #- stable
- custom_build_command: ""
- view: Frameworks
- description: >
-             ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
- email: "kde-frameworks-devel@kde.org"
- irc: ""
-#cioverrides
- logrotator: [-1, 50, -1, -1]
- upstream: []
- downstream: []
- priority: 1 
- webview: true
- gen_publishers: true
-# upstream:
-#  - qt5
-#  - extra-cmake-modules
-# downstream:
-#  - kdoctools
-#  - kunitconversion
-#  - ktextwidgets
-#  - kiconthemes
-#  - kxmlgui
-#  - kfilemetadata
-# priority: 1
 kidletime:
  <<: *defaults 
  upstream: 
@@ -877,3 +807,16 @@ krunner:
   - threadweaver
   - ki18n
   - plasma-framework
+ki18n:
+ <<: *defaults 
+ upstream:
+  - qt5
+  - extra-cmake-modules
+ downstream:
+  - kdoctools
+  - kunitconversion
+  - ktextwidgets
+  - kiconthemes
+  - kxmlgui
+  - kfilemetadata
+ priority: 1
