@@ -142,17 +142,17 @@ kguiaddons:
   priority: 1
 ki18n:
  <<: *defaults 
- upstream:
-  - qt5
-  - extra-cmake-modules
- downstream:
-  - kdoctools
-  - kunitconversion
-  - ktextwidgets
-  - kiconthemes
-  - kxmlgui
-  - kfilemetadata
- priority: 1
+# upstream:
+#  - qt5
+#  - extra-cmake-modules
+# downstream:
+#  - kdoctools
+#  - kunitconversion
+#  - ktextwidgets
+#  - kiconthemes
+#  - kxmlgui
+#  - kfilemetadata
+# priority: 1
 kidletime:
  <<: *defaults 
  upstream: 
