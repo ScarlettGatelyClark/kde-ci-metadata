@@ -15,7 +15,7 @@ project: &defaults
    repositories:
     - kdesupport/extra-cmake-modules
  excluded_repositories: []
-  platforms:
+ platforms:
   Linux:
    compilers:
     - gcc       
