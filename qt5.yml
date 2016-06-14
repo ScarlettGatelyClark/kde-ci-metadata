@@ -19,7 +19,7 @@ project: &defaults
    products: none
    repositories: none
  excluded_repositories: []
-  platforms:
+ platforms:
   Linux:
    compilers:
     - gcc       

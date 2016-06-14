@@ -27,14 +27,14 @@ project: &defaults
    compilers: 
     - kdesource-build 
    tracks: 
-    - stable
+    - devel
    Variations: ""
    and_custom_build_command: ""
   ubuntu-phone:
    compilers: 
     - snapcraft
    tracks: 
-    - stable
+    - devel
    Variations: ""
    snap_custom_build_command: ""
   osx:
@@ -43,7 +43,7 @@ project: &defaults
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
-    - stable
+    - devel
    Variations:  
     - NoX11 
    osx_custom_build_command: ""     
@@ -53,7 +53,7 @@ project: &defaults
     platform_email: kde-windows-devel@kde.org
     platform_irc: kde-windows
     tracks: 
-     - stable
+     - devel
     Variations:  
      - NoX11 
     win_custom_build_command: ""
