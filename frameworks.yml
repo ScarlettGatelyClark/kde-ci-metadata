@@ -21,29 +21,29 @@ project: &defaults
     - devel 
    Variations: ""
    lin_custom_build_command: ""
- android:
-  compilers: kdesource-build
-  tracks: 
-   - stable
- ubuntu-phone:
-  compilers: snapcraft
-  tracks: 
-   - stable
- osx:
-  compilers: clang
-  platform_irc: kde-mac-devel@kde.org
-  platform_email: kde-mac
-  tracks:
-   - stable
-  Variations:  
-   - NoX11      
-  windows: 
-   compilers: 
-    - vs2015
-   platform_email: kde-windows-devel@kde.org
-   platform_irc: kde-windows
+  android:
+   compilers: kdesource-build 
    tracks: 
     - stable
+  ubuntu-phone:
+   compilers: snapcraft
+   tracks: 
+    - stable
+  osx:
+   compilers: clang
+   platform_irc: kde-mac-devel@kde.org
+   platform_email: kde-mac
+   tracks:
+    - stable
+   Variations:  
+    - NoX11      
+   windows: 
+    compilers: 
+     - vs2015
+    platform_email: kde-windows-devel@kde.org
+    platform_irc: kde-windows
+    tracks: 
+     - stable
  custom_build_command: ""
  view: Frameworks
  description: >
