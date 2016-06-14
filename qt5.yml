@@ -19,7 +19,7 @@ project: &defaults
    products: none
    repositories: none
  excluded_repositories: []
- platforms:
+  platforms:
   Linux:
    compilers:
     - gcc       
@@ -32,11 +32,15 @@ project: &defaults
     - kdesource-build 
    tracks: 
     - stable
+   Variations: ""
+   and_custom_build_command: ""
   ubuntu-phone:
    compilers: 
     - snapcraft
    tracks: 
     - stable
+   Variations: ""
+   snap_custom_build_command: ""
   osx:
    compilers: 
     - clang
@@ -45,7 +49,8 @@ project: &defaults
    tracks:
     - stable
    Variations:  
-    - NoX11      
+    - NoX11 
+   osx_custom_build_command: ""     
    windows: 
     compilers: 
      - vs2015
@@ -53,6 +58,9 @@ project: &defaults
     platform_irc: kde-windows
     tracks: 
      - stable
+    Variations:  
+     - NoX11 
+    win_custom_build_command: ""
  custom_build_command: 'perl init-repository -f -q'
  view: QT
  description: >

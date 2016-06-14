@@ -26,11 +26,15 @@ project: &defaults
     - kdesource-build 
    tracks: 
     - stable
+   Variations: ""
+   and_custom_build_command: ""
   ubuntu-phone:
    compilers: 
     - snapcraft
    tracks: 
     - stable
+   Variations: ""
+   snap_custom_build_command: ""
   osx:
    compilers: 
     - clang
@@ -39,7 +43,8 @@ project: &defaults
    tracks:
     - stable
    Variations:  
-    - NoX11      
+    - NoX11 
+   osx_custom_build_command: ""     
    windows: 
     compilers: 
      - vs2015
@@ -47,6 +52,9 @@ project: &defaults
     platform_irc: kde-windows
     tracks: 
      - stable
+    Variations:  
+     - NoX11 
+    win_custom_build_command: "" 
  custom_build_command: ""
  view: Frameworks
  description: >
@@ -187,32 +195,40 @@ kwindowsystem:
     - NoX11
     - All
    lin_custom_build_command: ""   
- android:
-  compilers: 
-   - kdesource-build
-  tracks: 
-   - stable
- ubuntu-phone:
-  compilers: 
-   - snapcraft
-  tracks: 
-   - stable
- osx:
-  compilers: 
-   - clang
-  platform_irc: kde-mac-devel@kde.org
-  platform_email: kde-mac
-  tracks:
-   - stable
-  Variations:  
-   - NoX11      
-  windows: 
+  android:
    compilers: 
-    - vs2015
-   platform_email: kde-windows-devel@kde.org
-   platform_irc: kde-windows
+    - kdesource-build 
    tracks: 
     - stable
+   Variations: ""
+   and_custom_build_command: ""
+  ubuntu-phone:
+   compilers: 
+    - snapcraft
+   tracks: 
+    - stable
+   Variations: ""
+   snap_custom_build_command: ""
+  osx:
+   compilers: 
+    - clang
+   platform_irc: kde-mac-devel@kde.org
+   platform_email: kde-mac
+   tracks:
+    - stable
+   Variations:  
+    - NoX11 
+   osx_custom_build_command: ""     
+   windows: 
+    compilers: 
+     - vs2015
+    platform_email: kde-windows-devel@kde.org
+    platform_irc: kde-windows
+    tracks: 
+     - stable
+    Variations:  
+     - NoX11 
+    win_custom_build_command: ""
  upstream: 
   - qt5
   - extra-cmake-modules
@@ -652,32 +668,40 @@ plasma-framework:
     - NoX11
     - All
    lin_custom_build_command: ""
- android:
-  compilers: 
-   - kdesource-build
-  tracks: 
-   - stable
- ubuntu-phone:
-  compilers: 
-   - snapcraft
-  tracks: 
-   - stable
- osx:
-  compilers: 
-   - clang
-  platform_irc: kde-mac-devel@kde.org
-  platform_email: kde-mac
-  tracks:
-   - stable
-  Variations:  
-   - NoX11      
-  windows: 
+  android:
    compilers: 
-    - vs2015
-   platform_email: kde-windows-devel@kde.org
-   platform_irc: kde-windows
+    - kdesource-build 
    tracks: 
     - stable
+   Variations: ""
+   and_custom_build_command: ""
+  ubuntu-phone:
+   compilers: 
+    - snapcraft
+   tracks: 
+    - stable
+   Variations: ""
+   snap_custom_build_command: ""
+  osx:
+   compilers: 
+    - clang
+   platform_irc: kde-mac-devel@kde.org
+   platform_email: kde-mac
+   tracks:
+    - stable
+   Variations:  
+    - NoX11 
+   osx_custom_build_command: ""     
+   windows: 
+    compilers: 
+     - vs2015
+    platform_email: kde-windows-devel@kde.org
+    platform_irc: kde-windows
+    tracks: 
+     - stable
+    Variations:  
+     - NoX11 
+    win_custom_build_command: ""
  upstream: 
   - qt5
   - extra-cmake-modules
