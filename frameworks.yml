@@ -22,15 +22,18 @@ project: &defaults
    Variations: ""
    lin_custom_build_command: ""
   android:
-   compilers: kdesource-build 
+   compilers: 
+    - kdesource-build 
    tracks: 
     - stable
   ubuntu-phone:
-   compilers: snapcraft
+   compilers: 
+    - snapcraft
    tracks: 
     - stable
   osx:
-   compilers: clang
+   compilers: 
+    - clang
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
@@ -185,15 +188,18 @@ kwindowsystem:
     - All
    lin_custom_build_command: ""   
  android:
-  compilers: kdesource-build
+  compilers: 
+   - kdesource-build
   tracks: 
    - stable
  ubuntu-phone:
-  compilers: snapcraft
+  compilers: 
+   - snapcraft
   tracks: 
    - stable
  osx:
-  compilers: clang
+  compilers: 
+   - clang
   platform_irc: kde-mac-devel@kde.org
   platform_email: kde-mac
   tracks:
@@ -647,15 +653,18 @@ plasma-framework:
     - All
    lin_custom_build_command: ""
  android:
-  compilers: kdesource-build
+  compilers: 
+   - kdesource-build
   tracks: 
    - stable
  ubuntu-phone:
-  compilers: snapcraft
+  compilers: 
+   - snapcraft
   tracks: 
    - stable
  osx:
-  compilers: clang
+  compilers: 
+   - clang
   platform_irc: kde-mac-devel@kde.org
   platform_email: kde-mac
   tracks:
