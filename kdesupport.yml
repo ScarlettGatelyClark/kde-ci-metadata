@@ -47,7 +47,7 @@ project: &defaults
    Variations:  
     - NoX11 
    osx_custom_build_command: ""     
-   windows: 
+  windows: 
     compilers: 
      - vs2015
     platform_email: kde-windows-devel@kde.org
