@@ -28,7 +28,7 @@ project: &defaults
     - devel
    Variations: ""
    and_custom_build_command: ""
-  ubuntu-phone:
+  snappy:
    compilers: 
     - snapcraft
    tracks: 
@@ -202,7 +202,7 @@ kwindowsystem:
     - devel
    Variations: ""
    and_custom_build_command: ""
-  ubuntu-phone:
+  snappy:
    compilers: 
     - snapcraft
    tracks: 
@@ -675,7 +675,7 @@ plasma-framework:
     - devel
    Variations: ""
    and_custom_build_command: ""
-  ubuntu-phone:
+  snappy:
    compilers: 
     - snapcraft
    tracks: 

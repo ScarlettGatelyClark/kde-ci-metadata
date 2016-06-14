@@ -34,7 +34,7 @@ project: &defaults
     - stable
    Variations: ""
    and_custom_build_command: ""
-  ubuntu-phone:
+  snappy:
    compilers: 
     - snapcraft
    tracks: 
