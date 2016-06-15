@@ -42,7 +42,7 @@ project: &defaults
    compilers: 
     - flatpak-build
    tracks: 
-    - stable
+    - devel
    Variations: ""
    pak_custom_build_command: ""
    enabled: true
