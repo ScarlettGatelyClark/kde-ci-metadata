@@ -44,6 +44,14 @@ project: &defaults
    Variations: ""
    snap_custom_build_command: ""
    enabled: true
+  flatpak:
+   compilers: 
+    - flatpak-build
+   tracks: 
+    - stable
+   Variations: ""
+   pak_custom_build_command: ""
+   enabled: false
   osx:
    compilers: 
     - clang
