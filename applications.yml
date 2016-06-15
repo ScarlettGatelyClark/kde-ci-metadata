@@ -1,6 +1,6 @@
 #PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
 project: &defaults
- group_name: kdesupport
+ group_name: applications
  active: true 
  branchGrouptracks:
   kf5-qt5: devel 
@@ -9,6 +9,7 @@ project: &defaults
   address: "git://anongit.kde.org/"
   branches:
    devel: master
+   stable: Applications/16.04
  products_needed: []
  dependencies:   
    products: Qt5
@@ -21,6 +22,7 @@ project: &defaults
     - gcc       
    tracks:   
     - devel 
+    - stable
    Variations: ""
    lin_custom_build_command: ""
    enabled: true
@@ -28,7 +30,7 @@ project: &defaults
    compilers: 
     - kdesource-build 
    tracks: 
-    - devel
+    - stable
    Variations: ""
    and_custom_build_command: ""
    enabled: true
@@ -54,7 +56,7 @@ project: &defaults
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
-    - devel
+    - stable
    Variations:  
     - NoX11 
    osx_custom_build_command: "" 
@@ -65,7 +67,7 @@ project: &defaults
     platform_email: kde-windows-devel@kde.org
     platform_irc: kde-windows
     tracks: 
-     - devel
+     - stable
     Variations:  
      - NoX11 
     win_custom_build_command: ""
@@ -83,10 +85,9 @@ project: &defaults
  priority: 1 
  webview: true
  gen_publishers: true
-#Tier 1
-extra-cmake-modules:
+kate:
  <<: *defaults
- email: "kde-frameworks-devel@kde.org"
+ email: "kwrite-devel@kde.org"
  upstream: 
   - qt5
  downstream:
