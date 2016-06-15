@@ -24,7 +24,7 @@ project: &defaults
    enabled: true
   android:
    compilers: 
-    - kdesource-build 
+    - gcc
    tracks: 
     - devel
    Variations: ""
