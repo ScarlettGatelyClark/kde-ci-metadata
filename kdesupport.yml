@@ -23,6 +23,7 @@ project: &defaults
     - devel 
    Variations: ""
    lin_custom_build_command: ""
+   enabled: true
   android:
    compilers: 
     - kdesource-build 
@@ -30,6 +31,7 @@ project: &defaults
     - devel
    Variations: ""
    and_custom_build_command: ""
+   enabled: true
   snappy:
    compilers: 
     - snapcraft
@@ -37,6 +39,7 @@ project: &defaults
     - devel
    Variations: ""
    snap_custom_build_command: ""
+   enabled: true
   osx:
    compilers: 
     - clang
@@ -46,7 +49,8 @@ project: &defaults
     - devel
    Variations:  
     - NoX11 
-   osx_custom_build_command: ""     
+   osx_custom_build_command: "" 
+   enabled: true    
   windows: 
     compilers: 
      - vs2015
@@ -57,6 +61,7 @@ project: &defaults
     Variations:  
      - NoX11 
     win_custom_build_command: ""
+    enabled: true
  custom_build_command: ""
  view: KDESupport
  description: >

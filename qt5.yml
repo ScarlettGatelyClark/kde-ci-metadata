@@ -27,6 +27,7 @@ project: &defaults
     - devel 
    Variations: ""
    lin_custom_build_command: ""
+   enabled: true
   android:
    compilers: 
     - kdesource-build 
@@ -34,6 +35,7 @@ project: &defaults
     - stable
    Variations: ""
    and_custom_build_command: ""
+   enabled: true
   snappy:
    compilers: 
     - snapcraft
@@ -41,6 +43,7 @@ project: &defaults
     - stable
    Variations: ""
    snap_custom_build_command: ""
+   enabled: true
   osx:
    compilers: 
     - clang
@@ -50,7 +53,8 @@ project: &defaults
     - stable
    Variations:  
     - NoX11 
-   osx_custom_build_command: ""     
+   osx_custom_build_command: ""    
+   enabled: true 
   windows: 
     compilers: 
      - vs2015
@@ -61,6 +65,7 @@ project: &defaults
     Variations:  
      - NoX11 
     win_custom_build_command: ""
+    enabled: true
  custom_build_command: 'perl init-repository -f -q'
  view: QT
  description: >
