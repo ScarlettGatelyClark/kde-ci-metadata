@@ -22,15 +22,14 @@ project: &defaults
     - gcc       
    tracks:   
     - devel 
-    - stable
    Variations: ""
    lin_custom_build_command: ""
    enabled: true
   android:
    compilers: 
-    - kdesource-build 
+    - arm-android-gcc
    tracks: 
-    - stable
+    - devel
    Variations: ""
    and_custom_build_command: ""
    enabled: true
@@ -56,7 +55,7 @@ project: &defaults
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
-    - stable
+    - devel
    Variations: ""   
    osx_custom_build_command: "" 
    enabled: true    
@@ -67,8 +66,8 @@ project: &defaults
     platform_irc: kde-windows
     tracks: 
      - devel
-    Variations: ""    
-    win_custom_build_command: ""
+    Variations: ""   
+    win_custom_build_command: "" 
     enabled: true
  custom_build_command: ""
  view: Current Release Applications
