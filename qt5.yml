@@ -30,12 +30,12 @@ project: &defaults
    enabled: true
   android:
    compilers: 
-    - kdesource-build 
+    - arm-android-gcc 
    tracks: 
     - stable
    Variations: ""
    and_custom_build_command: ""
-   enabled: true
+   enabled: false
   snappy:
    compilers: 
     - snapcraft

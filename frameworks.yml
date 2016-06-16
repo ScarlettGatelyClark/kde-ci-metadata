@@ -24,7 +24,7 @@ project: &defaults
    enabled: true
   android:
    compilers: 
-    - gcc
+    - arm-android-gcc
    tracks: 
     - devel
    Variations: ""
@@ -211,7 +211,7 @@ kwindowsystem:
    enabled: true  
   android:
    compilers: 
-    - kdesource-build 
+    - arm-android-gcc 
    tracks: 
     - devel
    Variations: ""
@@ -697,7 +697,7 @@ plasma-framework:
    enabled: true
   android:
    compilers: 
-    - kdesource-build 
+    - arm-android-gcc
    tracks: 
     - devel
    Variations: ""
