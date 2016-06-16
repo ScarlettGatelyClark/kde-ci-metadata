@@ -55,8 +55,7 @@ project: &defaults
    platform_email: kde-mac
    tracks:
     - devel
-   Variations:  
-    - NoX11 
+   Variations: ""   
    osx_custom_build_command: "" 
    enabled: true    
   windows: 
