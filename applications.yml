@@ -67,7 +67,7 @@ project: &defaults
     platform_email: kde-windows-devel@kde.org
     platform_irc: kde-windows
     tracks: 
-     - stable
+     - devel
     Variations:  
      - NoX11 
     win_custom_build_command: ""
