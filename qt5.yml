@@ -69,8 +69,7 @@ project: &defaults
     platform_irc: kde-windows
     tracks: 
      - stable
-    Variations:  
-     - NoX11 
+   Variations: ""   
     win_custom_build_command: ""
     enabled: true
  custom_build_command: 'perl init-repository -f -q'

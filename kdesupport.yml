@@ -65,8 +65,7 @@ project: &defaults
     platform_irc: kde-windows
     tracks: 
      - devel
-    Variations:  
-     - NoX11 
+    Variations: ""   
     win_custom_build_command: ""
     enabled: true
  custom_build_command: ""
