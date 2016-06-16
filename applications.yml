@@ -73,7 +73,7 @@ project: &defaults
     win_custom_build_command: ""
     enabled: true
  custom_build_command: ""
- view: KDESupport
+ view: Current Release Applications
  description: >
              ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
  email: ""
