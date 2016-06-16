@@ -8,7 +8,7 @@ project: &defaults
   kf5-qt5-patch: devel
  repositories: 
   protocol: git
-  address: git://anongit.kde.org/qt/qt5
+  address: git://code.qt.io/qt/qt5.git
   branches:
    devel: '5.6'
    stable: '5.5'
