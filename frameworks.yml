@@ -1,70 +1,62 @@
 project: &defaults
  group_name: frameworks
- active: true 
+ active: true
  branchGrouptracks:
-  kf5-qt5: devel  
+  kf5-qt5: devel
  products_needed: []
- repositories: 
+ repositories:
   protocol: git
   address: "git://anongit.kde.org/"
-  branches: 
-   devel: master    
- dependencies: 
+  branches:
+   devel: master
+ dependencies:
   products:
-  repositories:    
+  repositories:
  excluded_repositories: []
  platforms:
   Linux:
    compilers:
-    - gcc       
-   tracks:   
-    - devel 
+    - gcc
+   tracks:
+    - devel
    Variations: ""
    lin_custom_build_command: ""
    enabled: true
   android:
-   compilers: 
+   compilers:
     - arm-android-gcc
-   tracks: 
+   tracks:
     - devel
    Variations: ""
    and_custom_build_command: ""
    enabled: true
-  snappy:
-   compilers: 
-    - snapcraft
-   tracks: 
-    - devel
-   Variations: ""
-   snap_custom_build_command: ""
-   enabled: true
   flatpak:
-   compilers: 
+   compilers:
     - flatpak-build
-   tracks: 
+   tracks:
     - devel
    Variations: ""
    pak_custom_build_command: ""
    enabled: true
   osx:
-   compilers: 
+   compilers:
     - clang
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
     - devel
-   Variations: ""   
-   osx_custom_build_command: "" 
-   enabled: true    
-  windows: 
-    compilers: 
+   Variations: ""
+   osx_custom_build_command: ""
+   enabled: true
+  windows:
+    compilers:
      - vs2015
     platform_email: kde-windows-devel@kde.org
     platform_irc: kde-windows
-    tracks: 
+    tracks:
      - devel
-    Variations: ""   
-    win_custom_build_command: "" 
+    Variations: ""
+    win_custom_build_command: ""
     enabled: true
  custom_build_command: ""
  view: Frameworks
@@ -76,64 +68,64 @@ project: &defaults
  logrotator: [-1, 50, -1, -1]
  upstream: []
  downstream: []
- priority: 1 
+ priority: 1
  webview: true
  gen_publishers: true
 #Tier 1
 attica:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 karchive:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 kconfig:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - kcompletion
  priority: 1
 bluez-qt:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - bluedevil
  priority: 1
 breeze-icons:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
-  - extra-cmake-modules 
+  - extra-cmake-modules
  priority: 1
 kapidox:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 kcodecs:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - kconfigwidgets
  priority: 1
 kcoreaddons:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - kservice
   - kglobalaccel
   - kded
@@ -142,17 +134,17 @@ kcoreaddons:
   - kauth
   - kcrash
   - kjobwidgets
-  - kpty   
+  - kpty
  priority: 1
 kdbusaddons:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 kdnssd:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
@@ -163,34 +155,34 @@ kguiaddons:
     - extra-cmake-modules
   priority: 1
 kidletime:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 kitemmodels:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 kitemviews:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 kplotting:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - kdesignerplugin
  priority: 1
 kwidgetsaddons:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
@@ -199,107 +191,99 @@ kwindowsystem:
  platforms:
   Linux:
    compilers:
-    - gcc       
-   tracks:   
-    - devel 
-   Variations:  
+    - gcc
+   tracks:
+    - devel
+   Variations:
     - NoX11
     - All
-   lin_custom_build_command: "" 
-   enabled: true  
+   lin_custom_build_command: ""
+   enabled: true
   android:
-   compilers: 
-    - arm-android-gcc 
-   tracks: 
+   compilers:
+    - arm-android-gcc
+   tracks:
     - devel
    Variations: ""
    and_custom_build_command: ""
    enabled: true
-  snappy:
-   compilers: 
-    - snapcraft
-   tracks: 
-    - devel
-   Variations: ""
-   snap_custom_build_command: ""
-   enabled: true
   flatpak:
-   compilers: 
+   compilers:
     - flatpak-build
-   tracks: 
+   tracks:
     - stable
    Variations: ""
    pak_custom_build_command: ""
    enabled: true
   osx:
-   compilers: 
+   compilers:
     - clang
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
     - devel
-   Variations: ""   
+   Variations: ""
    osx_custom_build_command: ""
-   enabled: true     
-  windows: 
-    compilers: 
+   enabled: true
+  windows:
+    compilers:
      - vs2015
     platform_email: kde-windows-devel@kde.org
     platform_irc: kde-windows
-    tracks: 
+    tracks:
      - devel
-    Variations: ""   
+    Variations: ""
     win_custom_build_command: ""
     enabled: true
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 modemmanager-qt:
  <<: *defaults
- upstream: 
+ upstream:
    - qt5
    - extra-cmake-modules
  priority: 1
 networkmanager-qt:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - plasma-nm
  priority: 1
 oxygen-icons5:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
  email: "kainz.a@gmail.com, plasma-devel@kde.org"
  priority: 1
 solid:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 sonnet:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  priority: 1
 threadweaver:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - kcmutils
  priority: 1
 #tier 2
 kactivities:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
   - kconfig
@@ -312,76 +296,76 @@ kactivities:
   - kio
   - kdeclarative
   - kpackage
- downstream: 
+ downstream:
   - kactivities-stats
  priority: 1
 kactivities-stats:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
   - kactivities
- downstream: 
+ downstream:
   - kactivitymanagerd
  priority: 1
 kauth:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
 kcompletion:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
   - kconfig
   - kwidgetsaddons
 kcrash:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
 kdoctools:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
- downstream: 
+ downstream:
   - kjs
 kfilemetadata:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
 kimageformats:
- <<: *defaults 
- upstream: 
+ <<: *defaults
+ upstream:
   - qt5
   - extra-cmake-modules
 kjobwidgets:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
 knotifications:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  email: "mklapetek@kde.org, kde-frameworks-devel@kde.org"
 kpty:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
 kunitconversion:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
 kpackage:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - karchive
@@ -391,13 +375,13 @@ kpackage:
 #tier 3
 baloo:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
  email: "me@vhanda.in, kde-frameworks-devel@kde.org"
 kbookmarks:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kconfigwidgets
@@ -409,12 +393,12 @@ kbookmarks:
   - kio
 kcmutils:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
 kconfigwidgets:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kauth
@@ -432,7 +416,7 @@ kconfigwidgets:
   - khtml
 kdeclarative:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kconfig
@@ -442,7 +426,7 @@ kdeclarative:
   - kpackage
 kded:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -455,7 +439,7 @@ kded:
   - kdoctools
 kdesignerplugin:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kplotting
@@ -464,7 +448,7 @@ kdesignerplugin:
   - kdewebkit
 kdesu:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kcoreaddons
@@ -472,7 +456,7 @@ kdesu:
   - kpty
 kdewebkit:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kcoreaddons
@@ -481,14 +465,14 @@ kdewebkit:
   - knotifications
 kemoticons:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - karchive
   - kservice
 kglobalaccel:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kconfig
@@ -498,7 +482,7 @@ kglobalaccel:
   - ki18n
 kiconthemes:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -507,7 +491,7 @@ kiconthemes:
   - kitemviews
 kinit:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -518,7 +502,7 @@ kinit:
   - kdoctools
 kio:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kdbusaddons
@@ -553,7 +537,7 @@ kio:
   - kross
 knewstuff:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - attica
@@ -568,15 +552,15 @@ knewstuff:
   - kio
 knotifyconfig:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
-  - extra-cmake-modules   
-  - ki18n   
+  - extra-cmake-modules
+  - ki18n
   - kio
   - knotifications
 kparts:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kio
@@ -590,17 +574,17 @@ kparts:
 kpeople:
  <<: *defaults
  irc: "#kde-telepathy"
- upstream: 
+ upstream:
   - qt5
-  - extra-cmake-modules   
-  - ki18n   
+  - extra-cmake-modules
+  - ki18n
   - kcoreaddons
   - kwidgetsaddons
-  - kservice   
+  - kservice
   - kitemviews
 kservice:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kconfig
@@ -614,7 +598,7 @@ kservice:
   - krunner
 ktexteditor:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - karchive
@@ -628,7 +612,7 @@ ktexteditor:
   - kxmlgui
 ktextwidgets:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kcompletion
@@ -642,7 +626,7 @@ ktextwidgets:
   - sonnet
 kwallet:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kconfig
@@ -656,7 +640,7 @@ kwallet:
   - kwidgetsaddons
 kxmlgui:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - attica
@@ -674,7 +658,7 @@ kxmlgui:
   - kbookmarks
 kxmlrpcclient:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kio
@@ -683,59 +667,51 @@ plasma-framework:
  platforms:
   Linux:
    compilers:
-    - gcc       
-   tracks:   
-    - devel 
-   Variations:  
+    - gcc
+   tracks:
+    - devel
+   Variations:
     - NoX11
     - All
    lin_custom_build_command: ""
    enabled: true
   android:
-   compilers: 
+   compilers:
     - arm-android-gcc
-   tracks: 
+   tracks:
     - devel
    Variations: ""
    and_custom_build_command: ""
    enabled: true
-  snappy:
-   compilers: 
-    - snapcraft
-   tracks: 
-    - devel
-   Variations: ""
-   snap_custom_build_command: ""
-   enabled: true
   flatpak:
-   compilers: 
+   compilers:
     - flatpak-build
-   tracks: 
+   tracks:
     - stable
    Variations: ""
    pak_custom_build_command: ""
    enabled: true
   osx:
-   compilers: 
+   compilers:
     - clang
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
     - devel
-   Variations: ""   
-   osx_custom_build_command: "" 
-   enabled: true    
-  windows: 
-    compilers: 
+   Variations: ""
+   osx_custom_build_command: ""
+   enabled: true
+  windows:
+    compilers:
      - vs2015
     platform_email: kde-windows-devel@kde.org
     platform_irc: kde-windows
-    tracks: 
+    tracks:
      - devel
-    Variations: ""   
+    Variations: ""
     win_custom_build_command: ""
     enabled: true
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kactivities
@@ -779,7 +755,7 @@ plasma-framework:
 #tier 4
 frameworkintegration:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -795,7 +771,7 @@ frameworkintegration:
 #Porting aids
 kdelibs4support:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -824,12 +800,12 @@ kdelibs4support:
   - kglobalaccel
 khtml:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
 kjs:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kdoctools
@@ -837,7 +813,7 @@ kjs:
   - kjsembed
 kjsembed:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - kjs
@@ -845,7 +821,7 @@ kjsembed:
   - kdoctools
 kmediaplayer:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -853,7 +829,7 @@ kmediaplayer:
   - kxmlgui
 kross:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - ki18n
@@ -862,7 +838,7 @@ kross:
   - kparts
 krunner:
  <<: *defaults
- upstream: 
+ upstream:
   - qt5
   - extra-cmake-modules
   - solid
@@ -874,7 +850,7 @@ krunner:
   - ki18n
   - plasma-framework
 #ki18n:
-# <<: *defaults 
+# <<: *defaults
 # upstream:
 #  - qt5
 #  - extra-cmake-modules

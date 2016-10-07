@@ -36,14 +36,6 @@ project: &defaults
    Variations: ""
    and_custom_build_command: ""
    enabled: false
-  snappy:
-   compilers:
-    - snapcraft
-   tracks:
-    - stable
-   Variations: ""
-   snap_custom_build_command: ""
-   enabled: true
   flatpak:
    compilers:
     - flatpak-build
