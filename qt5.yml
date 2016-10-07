@@ -6,15 +6,15 @@ project: &defaults
   stable-kf5-qt5: stable
   kf5-minimum: minimum
   kf5-qt5-patch: devel
- repositories: 
+ repositories:
   protocol: git
   address: git://code.qt.io/qt/qt5.git
   branches:
-   devel: '5.6'
-   stable: '5.5'
+   devel: '5.7'
+   stable: '5.6'
    minimum: '5.3'
  products_needed: []
- dependencies: 
+ dependencies:
   qt/qt5:
    products: none
    repositories: none
@@ -22,54 +22,54 @@ project: &defaults
  platforms:
   Linux:
    compilers:
-    - gcc       
-   tracks:   
-    - devel 
+    - gcc
+   tracks:
+    - devel
    Variations: ""
    lin_custom_build_command: ""
    enabled: true
   android:
-   compilers: 
-    - arm-android-gcc 
-   tracks: 
+   compilers:
+    - arm-android-gcc
+   tracks:
     - stable
    Variations: ""
    and_custom_build_command: ""
    enabled: false
   snappy:
-   compilers: 
+   compilers:
     - snapcraft
-   tracks: 
+   tracks:
     - stable
    Variations: ""
    snap_custom_build_command: ""
    enabled: true
   flatpak:
-   compilers: 
+   compilers:
     - flatpak-build
-   tracks: 
+   tracks:
     - stable
    Variations: ""
    pak_custom_build_command: ""
    enabled: false
   osx:
-   compilers: 
+   compilers:
     - clang
    platform_irc: kde-mac-devel@kde.org
    platform_email: kde-mac
    tracks:
     - stable
-   Variations: ""   
-   osx_custom_build_command: ""    
-   enabled: true 
-  windows: 
-    compilers: 
+   Variations: ""
+   osx_custom_build_command: ""
+   enabled: true
+  windows:
+    compilers:
      - vs2015
     platform_email: kde-windows-devel@kde.org
     platform_irc: kde-windows
-    tracks: 
+    tracks:
      - stable
-    Variations: ""   
+    Variations: ""
     win_custom_build_command: ""
     enabled: true
  custom_build_command: 'perl init-repository -f -q'
@@ -86,8 +86,8 @@ project: &defaults
  webview: false
  gen_publishers: false
 qt5:
- <<: *defaults 
- excluded_repositories: 
+ <<: *defaults
+ excluded_repositories:
   - qt5/qtcanvas3d
   - qt5/qtx11extras
   - qt5/qtwebkit-examples-and-demos
