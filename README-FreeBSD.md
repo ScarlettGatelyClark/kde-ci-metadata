@@ -10,6 +10,17 @@ for use in the KDE CI System.
  - Enable ssh access:
      echo 'sshd_enable="YES"' >> /etc/rc.conf
      service sshd start
+ - Install Java:
+     pkg install openjdk8-jre
+ - Add a user (we'll call it kde):
+     echo "kde::::::KDE Jenkins::sh:" | adduser -w no -f -
+ - Add a private ssh key to the user:
+     su - kde
+     mkdir .ssh
+     chmod 700 .ssh
+     ssh-keygen -N '' -f .ssh/id_jenkins
+     cat .ssh/id_jenkins.pub >> .ssh/authorized_keys
+
 
 [1] https://www.freebsd.org/releases/11.0R/announce.html
 
