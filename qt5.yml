@@ -64,6 +64,16 @@ project: &defaults
     Variations: ""
     win_custom_build_command: ""
     enabled: true
+  freebsd:
+    compilers:
+     - clang
+    platform_email: kde@freebsd.org
+    platform_irc: kde-freebsd
+    tracks:
+     - stable
+    Variations: ""
+    fbsd_custom_build_command: ""
+    enabled: true
  custom_build_command: 'perl init-repository -f -q'
  view: QT
  description: >

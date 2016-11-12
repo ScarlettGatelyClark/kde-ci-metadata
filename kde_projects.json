@@ -227,7 +227,15 @@
 							"platform_irc": "kde-windows",
 							"tracks":["devel","stable"],
 							"VariationWindows":[]      		  				
-    					} 
+    					},
+    					"freebsd": {
+    						"build":"true",
+    						"compilers":"clang", 
+    						"platform_email": "",
+							"platform_irc": "kde-freebsd",
+							"tracks":["minimum","stable"],
+							"VariationFreeBSD":[]    		
+    					}
     				},  
     				"Variations":[],   		
 					"products_needed": {
@@ -366,7 +374,15 @@
 							"platform_irc": "kde-windows",
 							"tracks":["devel"],
 							"VariationWindows":[]      		  				
-    					} 
+    					},
+    					"freebsd": {
+    						"build":"true",
+    						"compilers":"clang",
+    						"platform_email": "",
+							"platform_irc": "kde-freebsd",
+							"tracks":["devel"],
+							"VariationFreeBSD":[]      		  				
+    					}
     				},
     				"Variations":[],   		
 					"products_needed": {
