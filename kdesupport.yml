@@ -60,7 +60,7 @@ project: &defaults
     Variations: ""
     win_custom_build_command: ""
     enabled: true
-  freebsd:
+  FreeBSD:
     compilers:
      - clang
     platform_email: kde@freebsd.org

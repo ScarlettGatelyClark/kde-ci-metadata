@@ -228,7 +228,7 @@
 							"tracks":["devel","stable"],
 							"VariationWindows":[]      		  				
     					},
-    					"freebsd": {
+    					"FreeBSD": {
     						"build":"true",
     						"compilers":"clang", 
     						"platform_email": "",
@@ -375,7 +375,7 @@
 							"tracks":["devel"],
 							"VariationWindows":[]      		  				
     					},
-    					"freebsd": {
+    					"FreeBSD": {
     						"build":"true",
     						"compilers":"clang",
     						"platform_email": "",
