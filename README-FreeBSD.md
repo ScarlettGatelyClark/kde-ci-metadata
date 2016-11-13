@@ -20,9 +20,11 @@ for use in the KDE CI System.
    dependencies via rsync anyway.
      pkg install rsync
  - Install ECM (older version), which will pull in current Qt5 packages;
-   then delete ECM because it needs to be up-to-date.
+   then delete ECM because an up-to-date version will be built by CI.
      pkg install extra-cmake-modules # Soon kf5-extra-cmake-modules
      pkg delete extra-cmake-modules
+ - Install other Qt bits:
+     pkg install qt5
  - Install needed python packages:
      pkg install py27-lxml
  - Add a user (we'll call it kde):
