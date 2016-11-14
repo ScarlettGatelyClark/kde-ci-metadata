@@ -24,7 +24,7 @@ for use in the KDE CI System.
      pkg install qt5 extra-cmake-modules # Soon kf5-extra-cmake-modules
      pkg delete extra-cmake-modules
  - Install KF5 Tier 1 Prerequisites
-     pkg install gettext bison shared-mime-info polkit-qt5
+     pkg install gettext bison shared-mime-info polkit-qt5 pkgconf
  - Install needed python packages:
      pkg install py27-lxml
  - Add a user (we'll call it kde):
