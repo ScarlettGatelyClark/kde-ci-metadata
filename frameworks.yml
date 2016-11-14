@@ -245,6 +245,16 @@ kwindowsystem:
     Variations: ""
     win_custom_build_command: ""
     enabled: true
+  FreeBSD:
+    compilers:
+     - clang
+    platform_email: kde@freebsd.org
+    platform_irc: kde-freebsd
+    tracks:
+     - devel
+    Variations: ""
+    fbsd_custom_build_command: ""
+    enabled: true
  upstream:
   - qt5
   - extra-cmake-modules
@@ -720,6 +730,16 @@ plasma-framework:
      - devel
     Variations: ""
     win_custom_build_command: ""
+    enabled: true
+  FreeBSD:
+    compilers:
+     - clang
+    platform_email: kde@freebsd.org
+    platform_irc: kde-freebsd
+    tracks:
+     - devel
+    Variations: ""
+    fbsd_custom_build_command: ""
     enabled: true
  upstream:
   - qt5

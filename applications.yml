@@ -61,6 +61,16 @@ project: &defaults
     Variations: ""
     win_custom_build_command: ""
     enabled: true
+  FreeBSD:
+    compilers:
+     - clang
+    platform_email: kde@freebsd.org
+    platform_irc: kde-freebsd
+    tracks:
+     - devel
+    Variations: ""
+    fbsd_custom_build_command: ""
+    enabled: true
  custom_build_command: ""
  view: Current Release Applications
  description: >
