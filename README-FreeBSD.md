@@ -42,6 +42,9 @@ for use in the KDE CI System.
  - Create a directory where Jenkins can write stuff (as the user just created)
      mkdir -p /srv/jenkins/install/FreeBSD
      chown kde:kde /srv/jenkins/install/FreeBSD
+ - Do an initial clone of the CI tools repository:
+     cd
+     git clone git://anongit.kde.org/sysadmin/ci-tools-experimental scripts
  - On the install host (i.e. nellie) create paths for dependencies that
    CI will want to rsync, but that we've either installed from packages
    or will be picked up otherwise.
