@@ -1,0 +1,98 @@
+#PLEASE DO NOT TOUCH DEFAULTS!!! Thank you. Move along to your project(s) :)
+project: &defaults
+ group_name: external
+ active: true
+ branchGrouptracks:
+  kf5-qt5: devel
+ repositories:
+  protocol: git
+  address: ""
+  branches:
+   devel: master
+   stable: master
+ products_needed: []
+ dependencies:
+   products: Qt5
+   repositories: ''
+ excluded_repositories: []
+ platforms:
+  Linux:
+   compilers:
+    - gcc
+   tracks:
+    - devel
+   Variations: ""
+   lin_custom_build_command: ""
+   enabled: true
+  android:
+   compilers:
+    - arm-android-gcc
+   tracks:
+    - devel
+   Variations: ""
+   and_custom_build_command: ""
+   enabled: true
+  flatpak:
+   compilers:
+    - flatpak-build
+   tracks:
+    - devel
+   Variations: ""
+   pak_custom_build_command: ""
+   enabled: true
+  osx:
+   compilers:
+    - clang
+   platform_irc: kde-mac-devel@kde.org
+   platform_email: kde-mac
+   tracks:
+    - devel
+   Variations: ""
+   osx_custom_build_command: ""
+   enabled: true
+  windows:
+    compilers:
+     - vs2015
+    platform_email: kde-windows-devel@kde.org
+    platform_irc: kde-windows
+    tracks:
+     - devel
+    Variations: ""
+    win_custom_build_command: ""
+    enabled: true
+  FreeBSD:
+    compilers:
+     - clang
+    platform_email: kde@freebsd.org
+    platform_irc: kde-freebsd
+    tracks:
+     - devel
+    Variations: ""
+    fbsd_custom_build_command: ""
+    enabled: true
+ custom_build_command: ""
+ view: External Dependencies
+ description: >
+             ${group_view} Project: ${jobname} Branch: ${branch} BranchGroup: ${branchGroup} in the ${branch_group_tracks} track\n
+ email: ""
+ irc: ""
+#cioverrides
+ logrotator: [-1, 50, -1, -1]
+ upstream: []
+ downstream: []
+ priority: 1
+ webview: false
+ gen_publishers: false 
+kate:
+ <<: *defaults
+ repositories:
+  protocol: git
+  address: "git://git.freedesktop.org/git/poppler/poppler"
+  branches:
+   devel: master
+   stable: master 
+ upstream:
+  - qt5
+ downstream:
+  - ktexteditor
+ priority: 1
