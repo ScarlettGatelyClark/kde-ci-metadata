@@ -116,3 +116,11 @@ extra-cmake-modules:
   - sonnet
   - threadweaver
  priority: 1
+polkit-qt-1:
+ <<: *defaults
+ email: "kde-frameworks-devel@kde.org"
+ upstream:
+  - qt5
+ downstream:
+  - kauth
+ priority: 1
