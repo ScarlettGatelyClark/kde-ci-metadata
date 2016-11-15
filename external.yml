@@ -82,15 +82,15 @@ project: &defaults
  downstream: []
  priority: 1
  webview: false
- gen_publishers: false 
-kate:
+ gen_publishers: false
+poppler:
  <<: *defaults
  repositories:
   protocol: git
   address: "git://git.freedesktop.org/git/poppler/poppler"
   branches:
    devel: master
-   stable: master 
+   stable: master
  upstream:
   - qt5
  downstream:
