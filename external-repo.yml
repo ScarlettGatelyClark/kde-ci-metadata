@@ -3,7 +3,7 @@ hasrepo: true
 icon: null
 members:
 - displayname: External
--  username: na
+  username: na
 name: External
 projectpath: ''
 repoactive: true
