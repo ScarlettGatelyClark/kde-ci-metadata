@@ -31,6 +31,7 @@ for use in the KDE CI System.
      pkg install qt5-phonon-vlc
      pkg install boost-all
      pkg install poppler
+     pkg install lmdb
  - Install needed python packages:
      pkg install py27-lxml
  - Add a user (we'll call it kde):
