@@ -104,7 +104,7 @@ libgit2:
   branches:
    devel: master
    stable: master
- upstream: ''
+ upstream: []
  downstream:
   - ktexteditor
  priority: 1
