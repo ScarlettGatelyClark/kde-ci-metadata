@@ -100,7 +100,7 @@ libgit2:
  <<: *defaults
  repositories:
   protocol: git
-  address: " https://github.com/libgit2/libgit2.git"
+  address: "https://github.com/libgit2/libgit2.git"
   branches:
    devel: master
    stable: master
