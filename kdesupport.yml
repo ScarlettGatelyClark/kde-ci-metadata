@@ -123,4 +123,5 @@ polkit-qt-1:
   - qt5
  downstream:
   - kauth
+
  priority: 1
