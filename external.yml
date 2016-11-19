@@ -96,3 +96,15 @@ poppler:
  downstream:
   - ktexteditor
  priority: 1
+libgit2:
+ <<: *defaults
+ repositories:
+  protocol: git
+  address: "https://github.com/libgit2/libgit2.git"
+  branches:
+   devel: master
+   stable: master
+ upstream: []
+ downstream:
+  - ktexteditor
+ priority: 1

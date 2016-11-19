@@ -125,3 +125,11 @@ polkit-qt-1:
   - kauth
 
  priority: 1
+phonon:
+ <<: *defaults
+ email: ""
+ upstream:
+  - qt5
+ downstream:
+  - knotifications
+ priority: 1
