@@ -244,7 +244,7 @@ plasma-desktop:
   - qt5
  downstream: []
  priority: 1
-plasma-discover:
+discover:
  <<: *defaults
  upstream:
   - qt5
